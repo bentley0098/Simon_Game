@@ -1,0 +1,126 @@
+﻿/*
+    Button stylings used from example provided by Professor Keating.
+
+    This application has been written on a machine using MacOS version 10.14.6.
+    It was tested in browser using boyth Google Chrome version 88.0.4324.192 and Safari version 14.0.1.
+
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+
+.container {
+    
+    height: 500px;
+    width: 500px;
+
+    position: relative;
+    margin:auto;
+   
+}
+
+.central{
+    background-color: black;
+    height: 400px;
+    width: 400px;
+    border-radius: 100%;
+
+    position: absolute;
+    top: 50px;
+    left: 50px;
+   
+    
+
+}
+
+.button {
+    height: 175px;
+    width: 175px;
+    border-radius: 100%;
+    border: 10px solid black;
+
+    position: absolute;
+}
+
+.button:hover{
+    box-shadow: inset 0 0 0 4px white;
+    cursor:pointer;
+}
+
+.green {
+    box-shadow: inset 0px 2px 0px 0px #dfff80;
+    background: linear-gradient(to bottom, #00ff00 5%, #009933 100%);
+    top: 0;
+    left: 0;
+}
+
+.red {
+    
+    top: 0;
+    right: 0;
+
+    box-shadow: inset 0px 2px 0px 0px #f29c93;
+    background: linear-gradient(to bottom, #fe1a00 5%, #ce0100 100%);
+}
+
+.yellow {
+    box-shadow: inset 0px 2px 0px 0px #f29c93;
+    background: linear-gradient(to bottom, #ffec64 5%, #ffab23 100%);
+
+    bottom: 0;
+    left: 0;
+}
+
+.blue {
+    box-shadow: inset 0px 2px 0px 0px #66ffff;
+    background: linear-gradient(to bottom, #0099ff 5%, #0033cc 100%);
+    bottom: 0;
+    right: 0;
+}
+
+.start {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 18pt;
+    width: 125px;
+    height: 50px;
+
+    display: inline-block;
+
+   
+}
+
+.buttons {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+#light {
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    background-color: red;
+
+    position: relative;
+    left: 110px;
+    top: 20px;
+}
+
+#highScore, #currentScore {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 18pt;
+
+    display: inline-block;
+    background-color: lightgray;
+    height: 30px;
+    width: 50px;
+    border: solid gray 2px;
+    border-radius: 20%;
+    text-align: center;
+}
+
+.active {
+    background: white;
+}
